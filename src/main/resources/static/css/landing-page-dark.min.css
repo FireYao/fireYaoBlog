@@ -296,7 +296,7 @@ a:active{
     overflow: hidden;
     text-overflow: ellipsis;
     position: relative;
-    top: 6px;
+    top: 16px;
 }
 .post-flip{
     font-size: 20px;

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fireyao.blog.mapping.InfoMapper">
+    <resultMap id="InfoResultMap" type="com.fireyao.blog.model.Info">
+        <id column="username" property="username" javaType="java.lang.String"/>
+        <result column="password" property="password" javaType="java.lang.String"/>
+        <result column="email" property="email" javaType="java.lang.String"/>
+        <result column="github" property="github"/>
+        <result column="twitter" property="twitter"/>
+        <result column="md" property="md"/>
+        <result column="resume" property="resume"/>
+        <result column="Avdatar" property="Avatar"/>
+    </resultMap>
+
+    <select id="selectInfo" resultMap="InfoResultMap">
+      SELECT username,email,github,avatar FROM admin limit 1
+    </select>
+
+    <select id="selectByPw" parameterType="java.util.Map" resultType="java.lang.Integer">
+        SELECT count(1) FROM admin WHERE username = #{username} AND password = #{password}
+    </select>
+
+    <select id="selectByOldPass" parameterType="map" resultType="java.lang.Integer">
+        select count(1) from admin where password = #{pw}
+    </select>
+
+    <select id="selectMd" resultType="string">
+        SELECT md FROM admin limit 1
+    </select>
+
+    <select id="selectResume" resultType="string">
+        select resume from admin limit 1
+    </select>
+
+    <update id="updateInfo" parameterType="com.fireyao.blog.model.Info">
+        UPDATE admin
+        <set>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="email != null">
+                email= #{email},
+            </if>
+            <if test="github != null">
+                github=#{github},
+            </if>
+            <if test="twitter != null">
+                twitter=#{twitter}
+            </if>
+            <if test="md != null">
+                md = #{md}
+            </if>
+            <if test="resume != null">
+                resume = #{resume}
+            </if>
+            <if test="avatar != null">
+                avatar = #{avatar}
+            </if>
+        </set>
+        limit 1
+    </update>
+    <update id="updataPass" parameterType="string" >
+        UPDATE admin
+        SET password = #{newPass}
+        limit 1
+    </update>
+    <update id="updateAvater" parameterType="string">
+        UPDATE admin
+        SET avatar = #{avatar}
+        limit 1
+    </update>
+</mapper>

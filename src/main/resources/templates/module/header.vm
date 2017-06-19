@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>jcala_blog</title>
+    <title>fireYao</title>
     <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/landing-page.min.css" rel="stylesheet" id="theme-css"/>
     <link href="/css/jcala-md.min.css" rel="stylesheet"/>
@@ -32,24 +32,24 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand topnav" href="/">Home</a>
+            <a class="navbar-brand topnav" href="/">首页</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right myBar">
                 <li>
-                    <a href="/archives/1">Archives</a>
+                    <a href="/archives/1">所有文章</a>
                 </li>
                 <li>
-                    <a href="/tags">Tags</a>
+                    <a href="/tags">标签</a>
                 </li>
                 <li>
-                    <a href="/projects/1">Projects</a>
+                    <a href="/projects/1">项目</a>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <a href="/about">关于我</a>
                 </li>
                 <li>
-                    <a href="/admin/">Admin</a>
+                    <a href="/admin/">管理后台</a>
                 </li>
                 <li>
                     <a href='javascript:void(0)' onclick="day_night()"><i class="fa fa-moon-o" id="day-night"></i>
@@ -66,18 +66,18 @@
             <div class="col-lg-12">
                 <div class="intro-message">
                     <h1>$!{info.Username}</h1>
-                    <h3>my blog about programming</h3>
+                    <h3>藏器于身，待时而动</h3>
                     <hr class="intro-divider"/>
                     <ul class="list-inline intro-social-buttons">
-                        <li>
+                       #* <li>
                             <a href="mailto:$!{info.Email}" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
-                        </li>
+                        </li>*#
                         <li>
                             <a href="$!{info.Github}" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
-                        <li>
+                        #*<li>
                             <a href="$!{info.Twitter}" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
+                        </li>*#
                     </ul>
                 </div>
             </div>

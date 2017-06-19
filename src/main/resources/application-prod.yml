@@ -9,7 +9,7 @@ logging:
   config: classpath:log4j2.xml
 spring:
   velocity:
-    cache: true
+    cache: false
     charset: UTF-8
     view-names: error,index,projects,tags,tagView,archives,post,about,login,admin/blog_add,admin/project,
                 admin/monitor,admin/blog_modify,admin/blog_list,admin/info,admin/result,admin/resume
@@ -35,18 +35,19 @@ spring:
     password: root
     url: jdbc:mysql://127.0.0.1:3306/fireyaoblog?useUnicode:true&amp;characterEncoding:UTF-8
     driverClassName: com.mysql.jdbc.Driver
-    schema: classpath:import.sql
-    data: classpath:data.sql
-    initialize: false
+#    schema: classpath:import.sql
+#    data: classpath:data.sql
+#    initialize: false
     sql-script-encoding: UTF-8
     hikari:
       connection-timeout: 30000
       maximum-pool-size: 50
       minimum-idle: 5
 mybatis:
-  type-aliases-package:
-#  type-handlers-package: org.apache.ibatis.type.LocalDateTypeHandler
+  type-aliases-package: com.fireyao.blog.model,com.fireyao.blog.mapping
+  type-handlers-package: org.apache.ibatis.type.LocalDateTypeHandler
   config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
 pic:
   home:
 

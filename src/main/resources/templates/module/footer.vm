@@ -4,19 +4,19 @@
             <div class="col-lg-12">
                 <ul class="list-inline">
                     <li>
-                        <a href="/archives/1">Archives</a>
+                        <a href="/archives/1">所有文章</a>
                     </li>
                     <li>
-                        <a href="/tags">Tags</a>
+                        <a href="/tags">标签</a>
                     </li>
                     <li>
-                        <a href="/projects/1">Projects</a>
+                        <a href="/projects/1">项目</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a href="/about">关于我</a>
                     </li>
                     <li>
-                        <a href="/admin/">Admin</a>
+                        <a href="/admin/">管理后台</a>
                     </li>
                 </ul>
                 <p class="copyright text-muted small"></p>
