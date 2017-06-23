@@ -45,13 +45,13 @@
                 github=#{github},
             </if>
             <if test="twitter != null">
-                twitter=#{twitter}
+                twitter=#{twitter},
             </if>
             <if test="md != null">
-                md = #{md}
+                md = #{md},
             </if>
             <if test="resume != null">
-                resume = #{resume}
+                resume = #{resume},
             </if>
             <if test="avatar != null">
                 avatar = #{avatar}

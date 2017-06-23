@@ -4,6 +4,7 @@ import com.fireyao.blog.model.Info;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by liuliyuan on 2017/6/19.
@@ -21,10 +22,13 @@ public interface InfoMapper {
 
     String selectResume() throws RuntimeException;
 
+    @Transactional
     void updateInfo(Info info) throws RuntimeException;
 
+    @Transactional
     void updataPass(@Param("newPass") String newPass) throws RuntimeException;
 
+    @Transactional
     void updateAvater(@Param("avatar") String avatar) throws RuntimeException;
 
 }

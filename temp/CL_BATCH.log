@@ -1,0 +1,52 @@
+2017-06-23 21:28:43,568 ERROR c.f.b.s.i.InfoServiceImpl [http-nio-88-exec-3] 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+### The error may involve com.fireyao.blog.mapping.InfoMapper.updateInfo-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE admin          SET md = ?                                           resume = ?          limit 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+2017-06-23 21:30:34,913 ERROR c.f.b.s.i.InfoServiceImpl [http-nio-88-exec-9] 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+### The error may involve com.fireyao.blog.mapping.InfoMapper.updateInfo-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE admin          SET md = ?                                           resume = ?          limit 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+2017-06-23 21:30:39,936 ERROR c.f.b.s.i.InfoServiceImpl [http-nio-88-exec-2] 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+### The error may involve com.fireyao.blog.mapping.InfoMapper.updateInfo-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE admin          SET md = ?                                           resume = ?          limit 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+2017-06-23 21:30:54,899 ERROR c.f.b.s.i.InfoServiceImpl [http-nio-88-exec-5] 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+### The error may involve com.fireyao.blog.mapping.InfoMapper.updateInfo-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE admin          SET md = ?                                           resume = ?          limit 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+2017-06-23 21:34:33,790 ERROR c.f.b.s.i.InfoServiceImpl [http-nio-88-exec-8] 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+### The error may involve com.fireyao.blog.mapping.InfoMapper.updateInfo-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE admin          SET md = ?                                           resume = ?          limit 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+2017-06-23 21:40:52,857 ERROR c.f.b.s.i.InfoServiceImpl [http-nio-88-exec-5] 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+### The error may involve com.fireyao.blog.mapping.InfoMapper.updateInfo-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE admin          SET md = ?                                           resume = ?          limit 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '<h3 id="h3-u8054u7CFBu65B9u5F0F"><a name="联系方式" class="referen' at line 5
+2017-06-23 21:41:06,252 ERROR c.f.b.s.i.InfoServiceImpl [http-nio-88-exec-10] 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '' 
+        limit 1' at line 5
+### The error may involve com.fireyao.blog.mapping.InfoMapper.updateInfo-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE admin          SET md = ?                                           resume = ?          limit 1
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '' 
+        limit 1' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resume = '' 
+        limit 1' at line 5

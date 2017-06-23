@@ -4,6 +4,7 @@ import com.fireyao.blog.model.BlogView;
 import com.fireyao.blog.model.Info;
 import com.fireyao.blog.service.BlogService;
 import com.fireyao.blog.service.InfoService;
+import com.fireyao.blog.service.ProjectService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,8 +27,12 @@ public class BlogFontController {
     @Resource
     private BlogService blogService;
 
+    @Resource
+    private ProjectService projectService;
+
     /**
      * 首页进入文章列表
+     *
      * @param model
      * @return
      */
@@ -43,6 +48,7 @@ public class BlogFontController {
 
     /**
      * 文章列表
+     *
      * @param page
      * @param model
      * @return
@@ -59,19 +65,20 @@ public class BlogFontController {
 
     /**
      * 文章详情
+     *
      * @param id
      * @param model
      * @return
      */
     @GetMapping("/post/{id}")
-    public String post(@PathVariable int id,Model model) {
-        model.addAttribute("info",infoService.getInfo());
-        BlogView blogView=blogService.getBlog(id);
-        BlogView prev=blogService.getPrevBlog(id);
-        BlogView next=blogService.getNextBlog(id);
-        model.addAttribute("prev",prev);
-        model.addAttribute("next",next);
-        model.addAttribute("article",blogView.getArticle());
+    public String post(@PathVariable int id, Model model) {
+        model.addAttribute("info", infoService.getInfo());
+        BlogView blogView = blogService.getBlog(id);
+        BlogView prev = blogService.getPrevBlog(id);
+        BlogView next = blogService.getNextBlog(id);
+        model.addAttribute("prev", prev);
+        model.addAttribute("next", next);
+        model.addAttribute("article", blogView.getArticle());
         return "post";
     }
 
@@ -117,5 +124,34 @@ public class BlogFontController {
         infoService.destroySession(request);
         return "redirect:/login";
     }
+
+    /**
+     * 关于我
+     *
+     * @param model
+     * @return
+     */
+    @GetMapping("/about")
+    public String about(Model model) {
+        model.addAttribute("info", infoService.getInfo());
+        model.addAttribute("resume", infoService.getResumeView());
+        return "about";
+    }
+
+    @GetMapping("/projects")
+    public String projects(Model model) {
+        model.addAttribute("info", infoService.getInfo());
+        return "projects";
+    }
+
+    @GetMapping("/projects/{page}")
+    public String projectPage(@PathVariable int page, Model model) {
+        model.addAttribute("info", infoService.getInfo());
+        model.addAttribute("projects", projectService.getPros(page));
+        model.addAttribute("pageNum", projectService.getPageNum());
+        model.addAttribute("current", page);
+        return "projects";
+    }
+
 
 }
